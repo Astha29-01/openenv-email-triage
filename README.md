@@ -1,4 +1,12 @@
-<<<<<<< HEAD
+---
+title: OpenEnv Email Triage
+emoji: 📧
+colorFrom: blue
+colorTo: green
+sdk: docker
+app_file: app.py
+pinned: false
+---
 # OpenEnv Email Triage Assistant
 
 A real-world OpenEnv environment for training and evaluating AI agents on **email triage and inbox management**.
