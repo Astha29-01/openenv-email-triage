@@ -1,0 +1,31 @@
+name: openenv-email-triage
+version: 0.1.0
+description: >
+  A real-world email triage environment for training and evaluating AI agents on
+  inbox management tasks such as spam cleanup, support handling, prioritization,
+  escalation, and drafting replies.
+
+entrypoint:
+  api: app:app
+
+environment:
+  observation_model: Observation
+  action_model: Action
+  reward_model: Reward
+
+tasks:
+  - id: easy_spam_cleanup
+    difficulty: easy
+    description: Archive spam/promotional emails and keep the legitimate support email.
+  - id: medium_support_inbox
+    difficulty: medium
+    description: Classify support and billing emails, prioritize them, and draft useful replies.
+  - id: hard_exec_inbox
+    difficulty: hard
+    description: Handle an executive inbox by escalating urgent issues, archiving noise, prioritizing correctly, and drafting strong replies.
+
+endpoints:
+  reset: /reset
+  step: /step
+  state: /state
+  tasks: /tasks
