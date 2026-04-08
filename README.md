@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # OpenEnv Email Triage Assistant
 
 A real-world OpenEnv environment for training and evaluating AI agents on **email triage and inbox management**.
@@ -124,3 +125,4 @@ Grading checks include:
 ### Install
 ```bash
 pip install -r requirements.txt
+=======
