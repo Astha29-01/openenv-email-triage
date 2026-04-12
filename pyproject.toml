@@ -1,7 +1,8 @@
 [project]
 name = "openenv-email-triage"
 version = "0.1.0"
-description = "OpenEnv Email Triage environment"
+description = "OpenEnv Email Triage Environment"
+readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "fastapi",
@@ -11,4 +12,4 @@ dependencies = [
 ]
 
 [project.scripts]
-server = "server.app:app"
+server = "server.app:main"
